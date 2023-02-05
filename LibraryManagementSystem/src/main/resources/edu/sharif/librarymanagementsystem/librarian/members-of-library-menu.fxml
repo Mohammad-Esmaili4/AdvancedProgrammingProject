@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="memberPane" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="edu.sharif.librarymanagementsystem.librarian.MemberMenuController">
+   <children>
+      <Button layoutX="23.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#openAddMember" prefHeight="26.0" prefWidth="102.0" text="Add a member" />
+      <Button layoutX="23.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#removeMember" prefHeight="26.0" prefWidth="102.0" text="Remove" />
+      <Button layoutX="23.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#backToLibrarianMenu" prefHeight="26.0" prefWidth="102.0" text="Back" />
+      <Label alignment="CENTER" layoutX="100.0" layoutY="48.0" prefHeight="24.0" prefWidth="518.0" text="Members">
+         <font>
+            <Font name="Candara Light Italic" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listOfMembers" layoutX="138.0" layoutY="81.0" prefHeight="342.0" prefWidth="486.0" />
+   </children>
+</AnchorPane>

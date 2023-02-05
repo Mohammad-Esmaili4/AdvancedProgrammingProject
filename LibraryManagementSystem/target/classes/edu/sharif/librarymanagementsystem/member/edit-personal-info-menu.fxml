@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="edu.sharif.librarymanagementsystem.member.EditPersonalInfoController">
+    <children>
+        <Label alignment="CENTER" layoutX="100.0" layoutY="39.0" prefHeight="24.0" prefWidth="518.0" text="Edit Personal Info">
+            <font>
+                <Font name="Candara Light Italic" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="newUsername" layoutX="247.0" layoutY="94.0" prefHeight="26.0" prefWidth="223.0" promptText="Username" />
+        <TextField fx:id="newFullName" layoutX="249.0" layoutY="215.0" prefHeight="26.0" prefWidth="223.0" promptText="Fullname" />
+        <TextField fx:id="newNationalCode" layoutX="247.0" layoutY="259.0" prefHeight="26.0" prefWidth="223.0" promptText="National Code" />
+        <Button layoutX="335.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#changeInfo" text="Submit" />
+        <Button layoutX="334.0" layoutY="394.0" mnemonicParsing="false" onMouseClicked="#previousWindow" prefHeight="26.0" prefWidth="54.0" text="Back" />
+      <PasswordField fx:id="newPassword" layoutX="247.0" layoutY="135.0" prefHeight="26.0" prefWidth="223.0" promptText="New Password" />
+      <PasswordField fx:id="passRepeat" layoutX="247.0" layoutY="177.0" prefHeight="26.0" prefWidth="223.0" promptText="Repeat New Password" />
+      <Label fx:id="ErrorText" alignment="CENTER" layoutX="191.0" layoutY="310.0" prefHeight="18.0" prefWidth="334.0" textFill="#000000" />
+    </children>
+</AnchorPane>
